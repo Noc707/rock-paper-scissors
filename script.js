@@ -24,23 +24,30 @@ function playRound(humanChoice, computerChoice) {
         console.log("Its a tie!")
     }
     else if (humanChoice == "rock" && computerChoice == "paper") {
+        computerChoice++;
         console.log("You loose!")
     }
     else if (humanChoice == "rock" && computerChoice == "scissors") {
+        humanChoice++;
         console.log("Winner!")
     }
     else if (humanChoice == "paper" && computerChoice == "rock") {
+        humanChoice++;
         console.log("Winner!")
     }
     else if (humanChoice == "Paper" && computerChoice == "scissors") {
+        computerChoice++;
         console.log("You loose!")
     }
     else if (humanChoice == "scissors" && computerChoice == "rock") {
+        computerChoice++;
         console.log("You loose!")
     }
     else if (humanChoice == "scissors" && computerChoice == "paper") {
+        humanChoice++;
         console.log("Winner!")
     }
+
 }
     const humanSelection = getHumanChoice();
     const computerSelection = getComputerChoice();
