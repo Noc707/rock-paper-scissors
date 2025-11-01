@@ -7,17 +7,14 @@ function getComputerChoice() {
     
 }
 
-    const computersPick = getComputerChoice();
-console.log("The computer chose: " + computersPick);
-
 function getHumanChoice() {
     let option = prompt("Rock, paper, or scissors?");
-    let fixed = option.toLowerCase().trim();
+    let fixed = option.toLowerCase;
     if (fixed == "rock") {
         console.log("Rock");
         return fixed;
     }
-    else if (fixed == "Paper") {
+    else if (fixed == "paper") {
         console.log("Paper");
         return fixed;
     }
@@ -27,13 +24,6 @@ function getHumanChoice() {
     }
 
 }
-
-console.log("humanChoice");
-
-    let humanChoice = 0;
-    let computerChoice = 0;
-
-function playGame() {
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
@@ -65,11 +55,16 @@ function playRound(humanChoice, computerChoice) {
     }
 
 }
-    const humanSelection = getHumanChoice();
-    const computerSelection = getComputerChoice();
 
+function playGame() {
+
+    let humanSelection = getHumanChoice();
+    let computerSelection = getComputerChoice();
     playRound(humanSelection, computerSelection);
-
+    console.log("Computer chose " + computerSelection);
+    console.log(humanSelection);
+    console.log(computerSelection);
 }
 
-
+playGame();
+playGame();
