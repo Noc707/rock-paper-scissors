@@ -11,13 +11,29 @@ function getComputerChoice() {
 console.log("The computer chose: " + computersPick);
 
 function getHumanChoice() {
-    return prompt("Rock, paper, or scissors?").toLowerCase();
+    let option = prompt("Rock, paper, or scissors?");
+    let fixed = option.toLowerCase().trim();
+    if (fixed == "rock") {
+        console.log("Rock");
+        return fixed;
+    }
+    else if (fixed == "Paper") {
+        console.log("Paper");
+        return fixed;
+    }
+    else if (fixed == "scissors") {
+        console.log("Scissors");
+        return fixed;
+    }
+
 }
 
 console.log("humanChoice");
 
     let humanChoice = 0;
     let computerChoice = 0;
+
+function playGame() {
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
@@ -53,5 +69,7 @@ function playRound(humanChoice, computerChoice) {
     const computerSelection = getComputerChoice();
 
     playRound(humanSelection, computerSelection);
+
+}
 
 
