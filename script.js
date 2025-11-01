@@ -16,3 +16,5 @@ function getHumanChoice() {
 
 console.log("humanChoice");
 
+    let humanChoice = 0;
+    let computerChoice = 0;
