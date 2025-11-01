@@ -11,9 +11,8 @@ const computersPick = getComputerChoice();
 console.log("The computer chose: " + computersPick);
 
 function getHumanChoice() {
-    sign = window.prompt("choices") 
-    let choices = "";
-    return choices;
-
-console.log("getHumanChoice")
+    let humanChoice = prompt("Rock, paper, or scissors?").toLowerCase();
 }
+
+console.log("humanChoice");
+
