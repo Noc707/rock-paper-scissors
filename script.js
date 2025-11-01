@@ -18,3 +18,11 @@ console.log("humanChoice");
 
     let humanChoice = 0;
     let computerChoice = 0;
+
+function playRound(humanChoice, computerChoice) {
+}
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+
+    playRound(humanSelection, computerSelection);
+
